@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LoginPage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url("LoginBG.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+	position: absolute;
+	margin: 20px;
+	max-width: 300px;
+	padding: 16px;
+	background-color: white;
+	left: 40%;
+	top: 40%;
+	
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.btn {
+    background-color: #1A00FF;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+	
+html { 
+  background: url(BG/BG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+  <form action="/action_page.php">
+    <div class="container" align="center">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email or User Name" name="email" value="admin@kelvin.com" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" value="admin" required>
+
+      <input type="button" value="Login" class="btn" onClick="location.href='HomePGLD.html'">
+      <input type="button" value="Register" onClick="location.href='RegisterPage.html'">
+    </div>
+     
+</form>
+  
+</body>
+</html>
